@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.45.162.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.DataSourceContainer, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" Driver="Demo_Pre2.Demo_Pre2.1" Servername="Beijer.InprocessNeo.1" Node="" TargetInfoString="iXDeveloper;WinCe8;Beijer;Exter iX;X2 marine 7;en;" d1p1:Site.Name="Controller1" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826">
+    <OpcUaNamespaceInfos>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcUaClient.OpcUaNamespaceInfos, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
+    </OpcUaNamespaceInfos>
+  </Object>
+</NeoItem>

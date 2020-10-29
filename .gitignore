@@ -1,2 +1,9 @@
-BorderPatrol/Temp
-BorderPatrol/BuildFiles
+iX/Temp
+iX/BuildFiles
+vs/BorderPatrol/bin
+vs/BorderPatrol/obj
+vs/BorderPatrol.Tests/bin
+vs/BorderPatrol.Tests/obj
+vs/.vs
+vs/BorderPatrol/.vs
+vs/BorderPatrol.Tests/.vs

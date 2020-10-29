@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Types Version="1.20.255.0">
+  <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.AnalogNumericFX, Controls, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
+  <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.Label, Controls, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
+  <Type AssemblyQualifiedName="System.Windows.Shapes.Line, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+    <References>
+      <Assembly Name="PresentationFramework" FullName="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" GAC="true" TargetsCF="false" Location="%SystemRoot%\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll" />
+    </References>
+  </Type>
+  <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.Button, Controls, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
+  <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.TextBox, Controls, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
+</Types>
