@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.45.162.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalController, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" d1p1:Site.Name="Tags" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826">
+    <GlobalDataItems>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" d1p1:Site.Name="Tag1" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
+      </Object>
+    </GlobalDataItems>
+    <PollGroups>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.PollGroup, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" Name="PollGroup1" Interval="500" d1p1:Site.Name="PollGroup1" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" />
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.PollGroup, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" Name="PollGroup2" Interval="500" d1p1:Site.Name="PollGroup2" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" />
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.PollGroup, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" Name="PollGroup3" Interval="500" d1p1:Site.Name="PollGroup3" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" />
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.PollGroup, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" Name="PollGroup4" Interval="500" d1p1:Site.Name="PollGroup4" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" />
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.PollGroup, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" Name="PollGroup5" Interval="500" d1p1:Site.Name="PollGroup5" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" />
+    </PollGroups>
+  </Object>
+</NeoItem>
