@@ -32,7 +32,9 @@
       <Items />
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagSecond" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items />

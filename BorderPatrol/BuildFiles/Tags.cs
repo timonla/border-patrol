@@ -16,7 +16,13 @@ namespace Neo.ApplicationFramework.Generated
 	public partial class Tags : Neo.ApplicationFramework.Tools.OpcClient.GlobalController, Neo.ApplicationFramework.Interfaces.ISupportMultiLanguage
 	{
 		
-		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag Tag1;
+		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag aValue;
+		
+		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag BorderRender;
+		
+		public Neo.ApplicationFramework.Tools.OpcClient.LightweightTag bValue;
+		
+		public Neo.ApplicationFramework.Tools.OpcClient.SystemDataItem SystemTagSecond;
 		
 		public Neo.ApplicationFramework.Tools.OpcClient.PollGroup PollGroup1;
 		
@@ -55,7 +61,10 @@ namespace Neo.ApplicationFramework.Generated
 		
 		private void InitializeObjectCreations()
 		{
-			this.Tag1 = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("Tag1", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), false, "", null);
+			this.aValue = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("aValue", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER4)), false, "", null);
+			this.BorderRender = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("BorderRender", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_STRING)), false, "", null);
+			this.bValue = new Neo.ApplicationFramework.Tools.OpcClient.LightweightTag("bValue", "", 500, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER4)), false, "", null);
+			this.SystemTagSecond = new Neo.ApplicationFramework.Tools.OpcClient.SystemDataItem("Second", "SystemTagSecond", ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_INTEGER2)), ((short)(1)), 0D, 1D, ((short)(0)), false, "Value Change", Core.Api.DataSource.AccessRights.Read, "PollGroup1", false, false, ((Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE)(Neo.ApplicationFramework.Interop.DataSource.BEDATATYPE.DT_DEFAULT)), "Second component of current time", ((short)(1)), "", "");
 			this.PollGroup1 = new Neo.ApplicationFramework.Tools.OpcClient.PollGroup();
 			this.PollGroup2 = new Neo.ApplicationFramework.Tools.OpcClient.PollGroup();
 			this.PollGroup3 = new Neo.ApplicationFramework.Tools.OpcClient.PollGroup();
@@ -75,7 +84,12 @@ namespace Neo.ApplicationFramework.Generated
 		
 		private void InitializeObjects()
 		{
-			this.LightweightTags.Add(this.Tag1);
+			this.SystemTagSecond.GlobalDataSubItems.Add(new Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem(new Neo.ApplicationFramework.Interfaces.VariantValue("0"), 0, new string[0], new string[0], true));
+			this.SystemTagSecond.ValueChange += new System.EventHandler<Core.Api.DataSource.ValueChangedEventArgs>(this.SystemTagSecond_ValueChange);
+			this.LightweightTags.Add(this.aValue);
+			this.LightweightTags.Add(this.BorderRender);
+			this.LightweightTags.Add(this.bValue);
+			this.GlobalDataItems.Add(this.SystemTagSecond);
 			this.PollGroup1.Interval = 500;
 			this.PollGroup1.Name = "PollGroup1";
 			this.PollGroup2.Interval = 500;

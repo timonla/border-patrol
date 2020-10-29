@@ -23,10 +23,23 @@
       <Items />
     </Category>
     <Category Name="Font">
-      <Items />
+      <Items>
+        <Item Target="Home.aInput" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.bInput" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.aLabel" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.bLabel" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.TriggerWalker" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.Title" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.Render" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.UpdateGrid" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
     </Category>
     <Category Name="GlobalDataItem">
-      <Items />
+      <Items>
+        <Item Target="Home.aInput" TargetProperty="Value" Source="Tags.aValue" />
+        <Item Target="Home.bInput" TargetProperty="Value" Source="Tags.bValue" />
+        <Item Target="Home.Render" TargetProperty="Text" Source="Tags.BorderRender" />
+      </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
       <Items />
@@ -49,11 +62,11 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>0</ObjectsCount>
-          <ScreenName>Screen1</ScreenName>
+          <ObjectsCount>9</ObjectsCount>
+          <ScreenName>Home</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">
-          <ScreenName>Screen1</ScreenName>
+          <ScreenName>Home</ScreenName>
         </Item>
       </Items>
     </Category>

@@ -103,6 +103,7 @@ namespace Neo.ApplicationFramework.Generated
 		private void ApplyLanguageInternal()
 		{
 			Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageResourceManager resources = new Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageResourceManager(typeof(AlarmServer));
+			this.m_Default.Text = resources.GetText("AlarmServer.Default.Text", "Default");
 		}
 		
 		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
