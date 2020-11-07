@@ -30,7 +30,7 @@
         <Item Target="Home.bLabel" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Home.TriggerWalker" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Home.Title" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Home.Render" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.Render" TargetProperty="FontFamily" Source="COUR.TTF" />
         <Item Target="Home.UpdateGrid" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
       </Items>
     </Category>
@@ -38,7 +38,6 @@
       <Items>
         <Item Target="Home.aInput" TargetProperty="Value" Source="Tags.aValue" />
         <Item Target="Home.bInput" TargetProperty="Value" Source="Tags.bValue" />
-        <Item Target="Home.Render" TargetProperty="Text" Source="Tags.BorderRender" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
