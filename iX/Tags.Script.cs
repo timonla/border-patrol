@@ -21,7 +21,7 @@ namespace Neo.ApplicationFramework.Generated
 		
 		void SystemTagSecond_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
-			
+			Globals.WalkerModule.Loop_1s();
 		}
     }
 }

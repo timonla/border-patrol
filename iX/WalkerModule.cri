@@ -32,7 +32,12 @@
       <Items />
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="WalkerModule.Script.cs" Source="Tags.XValue" />
+        <Item Target="WalkerModule.Script.cs" Source="Tags.YValue" />
+        <Item Target="WalkerModule.Script.cs" Source="Tags.RenderOutput" />
+        <Item Target="WalkerModule.Script.cs" Source="Tags.Running" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items />

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Model;
 
 namespace Renderer {
@@ -22,8 +22,8 @@ namespace Renderer {
     }
 
     internal class TextRenderer {
-        public static int Width { get; set; } = 78;
-        public static int Height { get; set; } = 37;
+        public static int Width = 78;
+        public static int Height = 37;
         private static readonly char person = '웃';
 
         public static string Render(Rectangle rectangle = null, Position police = null) {

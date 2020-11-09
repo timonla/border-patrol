@@ -24,11 +24,11 @@ namespace BorderPatrol.Tests.Model {
             actual.Should().Be(expected);
         }
 
-        [TestCase(1, 1)]
-        [TestCase(1, 11)]
-        [TestCase(4, 1)]
-        [TestCase(76, 35)]
-        public void Should_WorkForDifferentSizes(int x, int y) {
+        [TestCase(1, 1, TestName="Should render for minimum size")]
+        [TestCase(1, 11, TestName="Should render for height > width")]
+        [TestCase(4, 1, TestName="Should render for width > height")]
+        [TestCase(76, 35, TestName="Should render for maximum size")]
+        public void Should_RenderForDifferentSizes(int x, int y) {
             // arrange
             var rectangle = new Rectangle(x, y);
 

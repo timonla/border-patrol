@@ -1,8 +1,8 @@
-﻿using Renderer;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using FluentAssertions;
 using System.Linq;
 using System;
+using Renderer;
 using Model;
 
 namespace BorderPatrol.Tests.RendererTest {

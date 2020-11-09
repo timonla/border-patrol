@@ -3,17 +3,17 @@
 <NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
   <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalController, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" d1p1:Site.Name="Tags" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826">
     <GlobalDataItems>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" GlobalDataType="DT_INTEGER4" d1p1:Site.Name="aValue" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" GlobalDataType="DT_INTEGER4" d1p1:Site.Name="XValue" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" GlobalDataType="DT_STRING" d1p1:Site.Name="BorderRender" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" GlobalDataType="DT_STRING" d1p1:Site.Name="RenderOutput" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" GlobalDataType="DT_INTEGER4" d1p1:Site.Name="bValue" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" GlobalDataType="DT_INTEGER4" d1p1:Site.Name="YValue" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -83,6 +83,11 @@
         <Events>
           <Event Name="ValueChange" EventHandler="SystemTagSecond_ValueChange" />
         </Events>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="Running" ProjectGuid="425307fd-7f34-4ec7-8a31-bfcd9b4f6826" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.45.162.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
       </Object>
     </GlobalDataItems>
     <PollGroups>

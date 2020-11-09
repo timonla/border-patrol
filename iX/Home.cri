@@ -24,10 +24,10 @@
     </Category>
     <Category Name="Font">
       <Items>
-        <Item Target="Home.aInput" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Home.bInput" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Home.aLabel" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Home.bLabel" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.xInput" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.yInput" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.xLabel" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Home.yLabel" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Home.TriggerWalker" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Home.Title" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Home.Render" TargetProperty="FontFamily" Source="COUR.TTF" />
@@ -36,8 +36,12 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Home.aInput" TargetProperty="Value" Source="Tags.aValue" />
-        <Item Target="Home.bInput" TargetProperty="Value" Source="Tags.bValue" />
+        <Item Target="Home.xInput" TargetProperty="Value" Source="Tags.XValue" />
+        <Item Target="Home.yInput" TargetProperty="Value" Source="Tags.YValue" />
+        <Item xsi:type="ActionItem" Target="Home.TriggerWalker" TargetProperty="Actions" Source="Tags.Running" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Home.TriggerWalker" TargetProperty="Value" Source="Tags.Running" />
+        <Item Target="Home.TriggerWalker" TargetProperty="TextValue" Source="Tags.Running" />
+        <Item Target="Home.Render" TargetProperty="Text" Source="Tags.RenderOutput" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -73,7 +77,9 @@
       <Items />
     </Category>
     <Category Name="StructuredTag">
-      <Items />
+      <Items>
+        <Item xsi:type="ActionItem" Target="Home.TriggerWalker" TargetProperty="Actions" Source="Tags.Running" Event="Click" Action="Toggle Tag" Param="" />
+      </Items>
     </Category>
     <Category Name="Symbol">
       <Items />

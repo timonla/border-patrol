@@ -14,9 +14,37 @@ namespace Neo.ApplicationFramework.Generated
     using Neo.ApplicationFramework.Common.Graphics.Logic;
     using Neo.ApplicationFramework.Controls;
     using Neo.ApplicationFramework.Interfaces;
+	using Walker;
     
     
-    public partial class WalkerModule
-    {
+    public partial class WalkerModule {
+		static WalkerTags walkerTags = new WalkerTags(
+			new VariableReference<int>(
+				// XValue
+				() => Globals.Tags.XValue.Value,
+				val => { Globals.Tags.XValue.Value = val; }),
+			new VariableReference<int>(
+				// YValue
+				() => Globals.Tags.YValue.Value,
+				val => { Globals.Tags.YValue.Value = val; }),
+			new VariableReference<string>(
+				// RenderOutput
+				() => Globals.Tags.RenderOutput.Value,
+				val => { Globals.Tags.RenderOutput.Value = val; }),
+			new VariableReference<bool>(
+				// Running
+				() => Globals.Tags.Running.Value,
+				val => { Globals.Tags.Running.Value = val; })
+			);
+		
+		Walker walker = new Walker(walkerTags);
+		
+		public void Loop_1s() {
+			walker.Walk();
+		}
+
+		public void UpdateGrid() {
+			walker.UpdateGrid();
+		}
     }
 }
