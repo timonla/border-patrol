@@ -11,8 +11,8 @@ namespace BorderPatrol.Tests.RendererTest {
         [TestCase]
         public void WithoutRectangle_Should_RenderWithinDimensions() {
             // arrange
-            var expectedWidth = 78;
-            var expectedHeight = 37;
+            var expectedWidth = 76;
+            var expectedHeight = 39;
 
             // act
             var actual = TextRenderer.Render();
@@ -30,8 +30,8 @@ namespace BorderPatrol.Tests.RendererTest {
             // arrange
             var rectangle = new Rectangle(14, 7);
             Console.WriteLine(rectangle.Render());
-            var expectedWidth = 78;
-            var expectedHeight = 37;
+            var expectedWidth = 76;
+            var expectedHeight = 39;
 
             // act
             var actual = TextRenderer.Render(rectangle);
@@ -63,9 +63,9 @@ namespace BorderPatrol.Tests.RendererTest {
         public void WithPolice_Should_RenderWithRectangleAndPolice() {
             // arrange
             var rectangle = new Rectangle(4, 7);
-            var police = new Position(4, 3);
+            var police = new Position(3, 2);
             var expected = rectangle.Render().Split('\n');
-            expected[3] = "│   웃│";
+            expected[3] = "│   @│";
 
             // act
             var actual = TextRenderer.Render(rectangle, police).Split('\n');

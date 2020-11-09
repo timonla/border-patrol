@@ -13,19 +13,19 @@ namespace Walker {
 	}
 	
 	internal class WalkerTags {
-		public readonly VariableReference<int> AValue;
-		public readonly VariableReference<int> BValue;
+		public readonly VariableReference<int> XValue;
+		public readonly VariableReference<int> YValue;
 		public readonly VariableReference<string> RenderOutput;
 		public readonly VariableReference<bool> Running;
 		
 		public WalkerTags(
-			VariableReference<int> aValue = null,
-			VariableReference<int> bValue = null,
+			VariableReference<int> xValue = null,
+			VariableReference<int> yValue = null,
 			VariableReference<string> renderOutput = null,
 			VariableReference<bool> running = null
 		) {
-			AValue = aValue;
-			BValue = bValue;
+			XValue = xValue;
+			YValue = yValue;
 			RenderOutput = renderOutput;
 			Running = running;
 		}
@@ -38,7 +38,7 @@ namespace Walker {
 		
 		public Walker(WalkerTags tags) {
 			this.tags = tags;
-			police = new Position(1, 1);
+			police = new Position(0, 0);
 		}
 		
 		public void Walk() {
@@ -51,6 +51,7 @@ namespace Walker {
 		}
 
 		public void UpdateGrid() {
+			rectangle = new Rectangle(tags.XValue.Get(), tags.YValue.Get());
 		}
 	}
 }

@@ -27,7 +27,7 @@ namespace BorderPatrol.Tests.Model {
         [TestCase(1, 1, TestName="Should render for minimum size")]
         [TestCase(1, 11, TestName="Should render for height > width")]
         [TestCase(4, 1, TestName="Should render for width > height")]
-        [TestCase(76, 35, TestName="Should render for maximum size")]
+        [TestCase(74, 37, TestName="Should render for maximum size")]
         public void Should_RenderForDifferentSizes(int x, int y) {
             // arrange
             var rectangle = new Rectangle(x, y);

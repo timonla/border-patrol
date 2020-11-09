@@ -22,9 +22,9 @@ namespace Renderer {
     }
 
     internal class TextRenderer {
-        public static int Width = 78;
+        public static int Width = 74;
         public static int Height = 37;
-        private static readonly char person = '웃';
+        private static readonly char person = '@';
 
         public static string Render(Rectangle rectangle = null, Position police = null) {
             var emptyRow = new string(' ', Width);
@@ -35,8 +35,9 @@ namespace Renderer {
                 var rectangleRows = rectangle.Render().Split('\n');
 
                 if (police != null) {
-                    rectangleRows[police.Y] = rectangleRows[police.Y].Remove(police.X - 1, 1);
-                    rectangleRows[police.Y] = rectangleRows[police.Y].Insert(police.X, person.ToString());
+                    rectangleRows[police.Y + 1] = rectangleRows[police.Y + 1]
+                        .Remove(police.X + 1, 1)
+                        .Insert(police.X + 1, person.ToString());
                 }
 
                 rectangleRows

@@ -2,7 +2,7 @@
 <?neo version='2.45.162.0'?>
 <nacs:ScreenWindow Topmost="False" Title="Home" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="SingleBorder" ScreenSize="800, 480" PopupScreen="False" StyleName="Default" IsCacheable="True" Background="#FF000000" Width="800" Height="480" nai:SecurityProperties.SecurityGroupsRequired="None" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacb2="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.Home">
   <nacs:ElementCanvas Name="m_EditorCanvas" Width="800" Height="480" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
-    <nac:AnalogNumericFX AutoStretchFont="False" MaxValue="76" ValidateValueOnInput="True" ValidateValueOnDisplay="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_xInput" Width="190" Height="70" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="1" KeyboardNavigation.TabNavigation="None" Canvas.Left="71" Canvas.Top="88">
+    <nac:AnalogNumericFX AutoStretchFont="False" MaxValue="74" ValidateValueOnInput="True" ValidateValueOnDisplay="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_xInput" Width="190" Height="70" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="1" KeyboardNavigation.TabNavigation="None" Canvas.Left="71" Canvas.Top="88">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>
           <nacc:VariantValueConverter x:Key="ValueConverter" />
@@ -30,7 +30,7 @@
         </LinearGradientBrush>
       </nac:AnalogNumericFX.Background>
     </nac:AnalogNumericFX>
-    <nac:AnalogNumericFX AutoStretchFont="False" MaxValue="35" ValidateValueOnInput="True" ValidateValueOnDisplay="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_yInput" Width="190" Height="70" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="2" KeyboardNavigation.TabNavigation="None" Canvas.Left="71" Canvas.Top="171">
+    <nac:AnalogNumericFX AutoStretchFont="False" MaxValue="37" ValidateValueOnInput="True" ValidateValueOnDisplay="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_yInput" Width="190" Height="70" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="2" KeyboardNavigation.TabNavigation="None" Canvas.Left="71" Canvas.Top="171">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>
           <nacc:VariantValueConverter x:Key="ValueConverter" />
@@ -64,8 +64,8 @@
     <nac:Button Text="Start" RequiresTransparency="True" SymbolTransparent="False" FontSize="15" Name="m_TriggerWalker" Width="238" Height="81" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="23" Canvas.Top="382" nac:EnabledProperties.EnabledDynamicsValue="True" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension DefaultCF}">
       <nac:Button.Resources>
         <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
           <nacc:VariantValueConverter x:Key="TextValueConverter" />
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
@@ -106,7 +106,7 @@
       </nai:ActionProperties.Actions>
     </nac:Button>
     <nac:Label Text="Border Patrol" TextDecorations="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="36" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="9,0,9,1" Name="m_Title" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="29" Canvas.Top="11" />
-    <nac:TextBox MultiLine="True" WordWrap="False" FontFamily="Courier New" UndoLimit="1" Transparent="Visible" MaxLines="2147483647" TextDecorations="{x:Null}" IsReadOnly="True" AcceptsReturn="True" BorderBrush="#FF8FA4BE" Background="#FF000000" Foreground="#FFFFFFFF" FontSize="10" FontStyle="Normal" FontWeight="Normal" Name="m_Render" Width="478" Height="452" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="8" Canvas.Left="303" Canvas.Top="12" nacb2:BlinkProperties.VisibleDynamicsValue="True">
+    <nac:TextBox MultiLine="True" WordWrap="False" FontFamily="Courier New" UndoLimit="1" Transparent="Visible" MaxLines="2147483647" TextDecorations="{x:Null}" IsReadOnly="True" AcceptsReturn="True" BorderBrush="#FF8FA4BE" Background="#FF000000" Foreground="#FFFFFFFF" FontSize="10" FontStyle="Normal" FontWeight="Normal" Name="m_Render" Width="478" Height="451" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="8" Canvas.Left="303" Canvas.Top="12" nacb2:BlinkProperties.VisibleDynamicsValue="True">
       <nac:TextBox.Resources>
         <ResourceDictionary>
           <nacd1:RawConverter x:Key="TextConverter" DefaultValue="" />
@@ -114,44 +114,7 @@
       </nac:TextBox.Resources>
       <nac:TextBox.Text>
         <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.RenderOutput].Value" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>10000000👮000000000000000000000000000000000000000000000000000000000000000000000
-2🚨웃
-3
-4
-5
-6
-7
-78
-9
-10
-1
-2
-3
-4
-5
-6
-7
-8
-9
-20
-1
-2
-3
-4
-5
-6
-7
-8
-9
-30
-1
-2
-3
-4
-5
-6
-7
-</Binding.FallbackValue>
+          <Binding.FallbackValue>10000000👮000000000000000000000000000000000000000000000000000000000000000000000 2🚨웃 3 4 5 6 7 78 9 10 1 2 3 4 5 6 7 8 9 20 1 2 3 4 5 6 7 8 9 30 1 2 3 4 5 6 7</Binding.FallbackValue>
         </Binding>
       </nac:TextBox.Text>
     </nac:TextBox>
