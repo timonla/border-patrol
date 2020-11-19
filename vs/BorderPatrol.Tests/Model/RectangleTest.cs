@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using NUnit.Framework;
 using FluentAssertions;
-using Model;
+using Scripts.Model;
 
 namespace BorderPatrol.Tests.Model {
     [TestFixture]

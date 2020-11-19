@@ -1,8 +1,10 @@
 using System;
-using Model;
-using Renderer;
+using System.Runtime.CompilerServices;
+using Scripts.Model;
+using Scripts.Renderer;
 
-namespace Walker {
+[assembly: InternalsVisibleTo("BorderPatrol.Tests")]
+namespace Scripts.WalkerStructure {
 	internal class VariableReference<T> {
 		public Func<T> Get { get; private set; }
 		public Action<T> Set { get; private set; } 
@@ -33,25 +35,58 @@ namespace Walker {
 	
 	internal class Walker {
 		private readonly WalkerTags tags;
-		private Rectangle rectangle;
-		private Position police;
+		public Rectangle Rectangle { get; private set; }
+		public Position Police { get; private set; }
 		
 		public Walker(WalkerTags tags) {
 			this.tags = tags;
-			police = new Position(0, 0);
+			Police = new Position(0, 0);
 		}
 		
 		public void Walk() {
 			if (tags.Running.Get()) {
 				// Update police position
+				if (Police.Y == 0) {
+					// In top row
+					if (Police.X == Rectangle.Width - 1) {
+						// In end corner
+						Police.Y += 1;
+                    } else {
+						Police.X += 1;
+                    }
+                } else if (Police.Y == Rectangle.Height - 1) {
+					// In bottom row
+					if (Police.X == 0) {
+						// In end corner
+						Police.Y -= 1;
+                    } else {
+						Police.X -= 1;
+                    }
+                } else if (Police.X == 0) {
+					// In left column
+					Police.Y -= 1;
+                } else {
+					// In right column
+					Police.Y += 1;
+                }
 			}
 			
 			// Update render output
-			tags.RenderOutput.Set(TextRenderer.Render(rectangle, police));
+			tags.RenderOutput.Set(TextRenderer.Render(Rectangle, Police));
 		}
 
 		public void UpdateGrid() {
-			rectangle = new Rectangle(tags.XValue.Get(), tags.YValue.Get());
+			var x = tags.XValue.Get();
+			var y = tags.YValue.Get();
+			if (x == 0 && y == 0) return;
+			if (y == 0) {
+				Rectangle = new Square(x);
+			} else if (x == 0) { 
+				Rectangle = new Square(y);
+			} else { 
+				Rectangle = new Rectangle(x, y);
+			}
+			Police = new Position(0, 0);
 		}
 	}
 }

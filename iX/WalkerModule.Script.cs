@@ -14,7 +14,7 @@ namespace Neo.ApplicationFramework.Generated
     using Neo.ApplicationFramework.Common.Graphics.Logic;
     using Neo.ApplicationFramework.Controls;
     using Neo.ApplicationFramework.Interfaces;
-	using Walker;
+	using Scripts.WalkerStructure;
     
     
     public partial class WalkerModule {

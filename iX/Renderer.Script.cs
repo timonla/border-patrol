@@ -1,7 +1,7 @@
 using System.Linq;
-using Model;
+using Scripts.Model;
 
-namespace Renderer {
+namespace Scripts.Renderer {
     /* Workaround because Tuples are not available in Compact Framework 3.5
      * https://stackoverflow.com/questions/4312218/error-with-tuple-in-c-sharp-2008
      */

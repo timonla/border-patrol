@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 using System.Linq;
 
 [assembly: InternalsVisibleTo("BorderPatrol.Tests")]
-namespace Model {
+namespace Scripts.Model {
     internal class Rectangle {
         public int Width { get; set; }
         public int Height { get; set; }
@@ -26,6 +26,10 @@ namespace Model {
 
             return topRow + string.Join("", Enumerable.Repeat(row, Height).ToArray()) + bottomRow;
         }
+    }
+
+    internal class Square : Rectangle {
+        public Square(int width) : base(width, width) { }
     }
 
     internal class Position {

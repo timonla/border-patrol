@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project SchemaVersion="2.45.162.0" ProjectRevision="83">
+<Project SchemaVersion="2.45.162.0" ProjectRevision="88">
   <Guid>425307fd-7f34-4ec7-8a31-bfcd9b4f6826</Guid>
   <ProjectFiles>
     <ProjectFile Name="ProjectImages.neo" ModifiedDate="2020-10-29T18:07:48.2110514+01:00" Length="456" />
@@ -9,22 +9,22 @@
     <ProjectFile Name="Security.xml" ModifiedDate="2020-10-29T18:07:48.2150513+01:00" Length="694" />
     <ProjectFile Name="LicenseRootComponent.neo" ModifiedDate="2020-10-29T18:07:48.1990666+01:00" Length="20316" />
     <ProjectFile Name="Expressions.neo" ModifiedDate="2020-11-09T21:23:56.9242757+01:00" Length="459" />
-    <ProjectFile Name="Tags.neo" ModifiedDate="2020-11-09T21:22:24.8225079+01:00" Length="9066" />
-    <ProjectFile Name="Tags.Script.cs" ModifiedDate="2020-11-09T21:22:24.8285169+01:00" Length="932" />
+    <ProjectFile Name="Tags.neo" ModifiedDate="2020-11-19T22:21:24.3414291+01:00" Length="14247" />
+    <ProjectFile Name="Tags.Script.cs" ModifiedDate="2020-11-19T22:21:24.3474191+01:00" Length="1089" />
     <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2020-11-09T21:31:45.7038834+01:00" Length="7851" />
     <ProjectFile Name="AlarmServer.neo" ModifiedDate="2020-10-29T18:07:48.1210541+01:00" Length="1056" />
     <ProjectFile Name="CloudConfiguration.neo" ModifiedDate="2020-10-29T18:07:48.1660543+01:00" Length="2487" />
-    <ProjectFile Name="Home.neoxaml" ModifiedDate="2020-11-09T22:21:11.6672784+01:00" Length="796" />
-    <ProjectFile Name="Home.xaml" ModifiedDate="2020-11-09T22:21:11.7122735+01:00" Length="11760" />
+    <ProjectFile Name="Home.neoxaml" ModifiedDate="2020-11-09T22:22:03.8580297+01:00" Length="796" />
+    <ProjectFile Name="Home.xaml" ModifiedDate="2020-11-09T22:22:03.8960275+01:00" Length="11819" />
     <ProjectFile Name="Printer1.xml" ModifiedDate="2020-10-29T18:07:48.2060605+01:00" Length="850" />
     <ProjectFile Name="Controller1.neo" ModifiedDate="2020-10-29T18:07:48.1700678+01:00" Length="829" />
     <ProjectFile Name="WalkerStructure.neo" ModifiedDate="2020-11-09T21:58:50.3109095+01:00" Length="476" />
-    <ProjectFile Name="WalkerStructure.Script.cs" ModifiedDate="2020-11-09T21:58:50.3119107+01:00" Length="1409" />
+    <ProjectFile Name="WalkerStructure.Script.cs" ModifiedDate="2020-11-19T22:14:38.3137331+01:00" Length="2430" />
     <ProjectFile Name="Model.neo" ModifiedDate="2020-11-09T21:13:27.2286826+01:00" Length="466" />
-    <ProjectFile Name="Model.Script.cs" ModifiedDate="2020-11-09T21:41:16.6562765+01:00" Length="1397" />
+    <ProjectFile Name="Model.Script.cs" ModifiedDate="2020-11-19T21:29:56.0723026+01:00" Length="1514" />
     <ProjectFile Name="Renderer.neo" ModifiedDate="2020-11-09T22:11:13.3988518+01:00" Length="469" />
-    <ProjectFile Name="Renderer.Script.cs" ModifiedDate="2020-11-09T22:19:45.8718176+01:00" Length="1734" />
-    <ProjectFile Name="WalkerModule.neo" ModifiedDate="2020-11-09T21:49:17.3098161+01:00" Length="473" />
-    <ProjectFile Name="WalkerModule.Script.cs" ModifiedDate="2020-11-09T21:49:17.3108164+01:00" Length="1587" />
+    <ProjectFile Name="Renderer.Script.cs" ModifiedDate="2020-11-19T21:03:57.8379243+01:00" Length="1750" />
+    <ProjectFile Name="WalkerModule.neo" ModifiedDate="2020-11-19T21:42:56.359476+01:00" Length="473" />
+    <ProjectFile Name="WalkerModule.Script.cs" ModifiedDate="2020-11-19T21:42:56.3604764+01:00" Length="1604" />
   </ProjectFiles>
 </Project>

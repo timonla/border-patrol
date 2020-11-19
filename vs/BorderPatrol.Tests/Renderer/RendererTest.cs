@@ -2,8 +2,8 @@
 using FluentAssertions;
 using System.Linq;
 using System;
-using Renderer;
-using Model;
+using Scripts.Renderer;
+using Scripts.Model;
 
 namespace BorderPatrol.Tests.RendererTest {
     [TestFixture]
