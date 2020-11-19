@@ -9,7 +9,7 @@ namespace BorderPatrol.Tests.RendererTest {
     [TestFixture]
     class RendererTest {
         [TestCase]
-        public void WithoutRectangle_Should_RenderWithinDimensions() {
+        public void Render_WithoutRectangle_RendersWithinDimensions() {
             // arrange
             var expectedWidth = 76;
             var expectedHeight = 39;
@@ -26,7 +26,7 @@ namespace BorderPatrol.Tests.RendererTest {
         }
 
         [TestCase]
-        public void WithRectangle_Should_RenderWithinDimensions() {
+        public void Render_WithRectangle_RendersWithinDimensions() {
             // arrange
             var rectangle = new Rectangle(14, 7);
             Console.WriteLine(rectangle.Render());
@@ -45,7 +45,7 @@ namespace BorderPatrol.Tests.RendererTest {
         }
 
         [TestCase]
-        public void WithRectangle_Should_RenderRectangle() {
+        public void Render_WithRectangle_RendersRectangle() {
             // arrange
             var rectangle = new Rectangle(3, 7);
             var expected = rectangle.Render().Split('\n');
@@ -60,7 +60,7 @@ namespace BorderPatrol.Tests.RendererTest {
         }
 
         [TestCase]
-        public void WithPolice_Should_RenderWithRectangleAndPolice() {
+        public void Render_WithRectangleAndPolice_RendersWithRectangleAndPolice() {
             // arrange
             var rectangle = new Rectangle(4, 7);
             var police = new Position(3, 2);
