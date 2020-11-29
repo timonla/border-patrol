@@ -11,14 +11,14 @@ namespace BorderPatrol.Tests.Model {
             // arrange
             var rectangle = new Rectangle(5, 4);
             var expected = "┌─────┐\n" +
-                "│     │\n" +
+                "│@    │\n" +
                 "│     │\n" +
                 "│     │\n" +
                 "│     │\n" +
                 "└─────┘";
 
             // act
-            var actual = rectangle.Render();
+            var actual = rectangle.Draw(new Position());
 
             // assert
             actual.Should().Be(expected);
@@ -33,7 +33,7 @@ namespace BorderPatrol.Tests.Model {
             var rectangle = new Rectangle(x, y);
 
             // act
-            var actual = rectangle.Render();
+            var actual = rectangle.Draw(new Position());
             var actualWidth = actual.Split('\n').ToList().Max(subString => subString.Length);
             var actualHeight = actual.Split('\n').Length;
 

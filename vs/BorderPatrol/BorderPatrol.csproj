@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <Compile Include="..\..\iX\Model.Script.cs" Link="Model.Script.cs" />
-    <Compile Include="..\..\iX\Renderer.Script.cs" Link="Renderer.Script.cs" />
     <Compile Include="..\..\iX\WalkerStructure.Script.cs" Link="WalkerStructure.Script.cs" />
   </ItemGroup>
 
