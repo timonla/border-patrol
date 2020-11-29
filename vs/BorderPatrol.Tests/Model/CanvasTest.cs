@@ -4,9 +4,9 @@ using System.Linq;
 using System;
 using Scripts.Model;
 
-namespace BorderPatrol.Tests.RendererTest {
+namespace BorderPatrol.Tests.CanvasTest {
     [TestFixture]
-    class RendererTest {
+    class CanvasTest {
         [TestCase]
         public void Render_WithoutRectangle_RendersWithinDimensions() {
             // arrange

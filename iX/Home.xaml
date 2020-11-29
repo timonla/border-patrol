@@ -64,8 +64,8 @@
     <nac:Button Text="Start" RequiresTransparency="True" SymbolTransparent="False" FontSize="15" Name="m_TriggerWalker" Width="238" Height="81" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="23" Canvas.Top="382" nac:EnabledProperties.EnabledDynamicsValue="True" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension DefaultCF}">
       <nac:Button.Resources>
         <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="TextValueConverter" />
           <nacc:VariantValueConverter x:Key="ValueConverter" />
+          <nacc:VariantValueConverter x:Key="TextValueConverter" />
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
