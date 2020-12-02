@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FluentAssertions;
+using Scripts.Model;
 using Scripts.WalkerStructure;
 
 namespace BorderPatrol.Tests.Walker {

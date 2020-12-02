@@ -3,41 +3,41 @@ using NUnit.Framework;
 using FluentAssertions;
 using Scripts.Model;
 
-namespace BorderPatrol.Tests.Model {
+namespace WhenDrawingRectangle {
     [TestFixture]
-    class RectangleTest {
-        [TestCase]
-        public void Render_ReturnsCorrectLines() {
+    class GivenSomeWidthAndHeight {
+        [Test]
+        public void ShouldUseCorrectSymbols() {
             // arrange
             var rectangle = new Rectangle(5, 4);
+
+            // act
+            var actual = rectangle.Draw(new Position());
+
+            // assert
             var expected = "┌─────┐\n" +
                 "│@    │\n" +
                 "│     │\n" +
                 "│     │\n" +
                 "│     │\n" +
                 "└─────┘";
-
-            // act
-            var actual = rectangle.Draw(new Position());
-
-            // assert
             actual.Should().Be(expected);
         }
 
-        [TestCase(1, 1, TestName="Render_WithMinimumSize_ReturnsRightAmountOfLines")]
-        [TestCase(1, 11, TestName="Render_WithHeightGreaterWidth_ReturnsRightAmountOfLines")]
-        [TestCase(4, 1, TestName="Render_WithWidthGreaterHeight_ReturnsRightAmountOfLines")]
-        [TestCase(74, 37, TestName="Render_WithMaximumSize_ReturnsRightAmountOfLines")]
-        public void Render_ForDifferentSizes_ReturnsRightAmountOfLines(int x, int y) {
+        [TestCase(1, 1)]
+        [TestCase(1, 11)]
+        [TestCase(4, 1)]
+        [TestCase(74, 37)]
+        public void ShouldHaveCorrectDimensions(int x, int y) {
             // arrange
             var rectangle = new Rectangle(x, y);
 
             // act
             var actual = rectangle.Draw(new Position());
-            var actualWidth = actual.Split('\n').ToList().Max(subString => subString.Length);
-            var actualHeight = actual.Split('\n').Length;
 
             // assert
+            var actualWidth = actual.Split('\n').ToList().Max(subString => subString.Length);
+            var actualHeight = actual.Split('\n').Length;
             actualWidth.Should().Be(x + 2);
             actualHeight.Should().Be(y + 2);
         }

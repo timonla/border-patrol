@@ -3,13 +3,18 @@ using NUnit.Framework;
 using FluentAssertions;
 using Scripts.Model;
 
-namespace BorderPatrol.Tests.Model {
+namespace WhenDrawingSquare {
     [TestFixture]
-    class SquareTest {
-        [TestCase]
-        public void Render_ReturnsCorrectLines() {
+    class GivenSomeWidth{
+        [Test]
+        public void ShouldUseCorrectSymbols() {
             // arrange
             var square = new Square(5);
+
+            // act
+            var actual = square.Draw(new Position());
+
+            // assert
             var expected = "┌─────┐\n" +
                 "│@    │\n" +
                 "│     │\n" +
@@ -17,17 +22,12 @@ namespace BorderPatrol.Tests.Model {
                 "│     │\n" +
                 "│     │\n" +
                 "└─────┘";
-
-            // act
-            var actual = square.Draw(new Position());
-
-            // assert
             actual.Should().Be(expected);
         }
 
-        [TestCase(1, TestName="Render_WithMinimumSize_ReturnsRightAmountOfLines")]
-        [TestCase(37, TestName="Render_WithMaximumSize_ReturnsRightAmountOfLines")]
-        public void Render_ForDifferentSizes_ReturnsRightAmountOfLines(int x) {
+        [TestCase(1)]
+        [TestCase(37)]
+        public void GivenDifferntWidth(int x) {
             // arrange
             var square = new Square(x);
 
