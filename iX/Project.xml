@@ -19,9 +19,9 @@
     <ProjectFile Name="Printer1.xml" ModifiedDate="2020-10-29T18:07:48.2060605+01:00" Length="850" />
     <ProjectFile Name="Controller1.neo" ModifiedDate="2020-10-29T18:07:48.1700678+01:00" Length="829" />
     <ProjectFile Name="WalkerStructure.neo" ModifiedDate="2020-11-09T21:58:50.3109095+01:00" Length="476" />
-    <ProjectFile Name="WalkerStructure.Script.cs" ModifiedDate="2020-11-29T15:40:47.0999786+01:00" Length="1877" />
+    <ProjectFile Name="WalkerStructure.Script.cs" ModifiedDate="2020-11-29T19:15:00.5538618+01:00" Length="1877" />
     <ProjectFile Name="Model.neo" ModifiedDate="2020-11-09T21:13:27.2286826+01:00" Length="466" />
-    <ProjectFile Name="Model.Script.cs" ModifiedDate="2020-11-29T15:47:34.7059938+01:00" Length="6462" />
+    <ProjectFile Name="Model.Script.cs" ModifiedDate="2020-11-29T20:19:23.2065983+01:00" Length="6462" />
     <ProjectFile Name="WalkerModule.neo" ModifiedDate="2020-11-19T21:42:56.359476+01:00" Length="473" />
     <ProjectFile Name="WalkerModule.Script.cs" ModifiedDate="2020-11-19T21:42:56.3604764+01:00" Length="1604" />
   </ProjectFiles>
